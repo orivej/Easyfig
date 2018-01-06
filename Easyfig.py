@@ -6227,13 +6227,13 @@ def drawsvg(filename, minlength, mineval, minIdent, inputlist, width, height1, h
                         legpos = convertPosR(secondlist[0][0], maxlength, width, (j.start + j.stop)/2, aln)
                     else:
                         legpos = convertPos(secondlist[0][0], maxlength, width, (j.start + j.stop)/2, aln)
-                    for q in range(legpos  - 40, legpos + 50):
-                        if q in toplegpos[3]:
-                            firstleg = False
-                        if q in toplegpos[4]:
-                            secondleg = False
-                        if q in toplegpos[5]:
-                            thirdleg = False
+                    # for q in range(legpos  - 40, legpos + 50):
+                    #     if q in toplegpos[3]:
+                    #         firstleg = False
+                    #     if q in toplegpos[4]:
+                    #         secondleg = False
+                    #     if q in toplegpos[5]:
+                    #         thirdleg = False
                     if firstleg:
                         therung = 1
                         if testbmp.lengthString(j.name[:10], 64) > toplegpos[0]:
@@ -6263,13 +6263,13 @@ def drawsvg(filename, minlength, mineval, minIdent, inputlist, width, height1, h
                         legpos = convertPosR(secondlist[0][0], maxlength, width, (j.start[0] + j.stop[0])/2, aln)
                     else:
                         legpos = convertPos(secondlist[0][0], maxlength, width, (j.start[0] + j.stop[0])/2, aln)
-                    for q in range(legpos - 40, legpos + 50):
-                        if q in toplegpos[3]:
-                            firstleg = False
-                        if q in toplegpos[4]:
-                            secondleg = False
-                        if q in toplegpos[5]:
-                            thirdleg = False
+                    # for q in range(legpos - 40, legpos + 50):
+                    #     if q in toplegpos[3]:
+                    #         firstleg = False
+                    #     if q in toplegpos[4]:
+                    #         secondleg = False
+                    #     if q in toplegpos[5]:
+                    #         thirdleg = False
                     if firstleg:
                         therung = 1
                         if testbmp.lengthString(j.name[:10], 64) > toplegpos[0]:
